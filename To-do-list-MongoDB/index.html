@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-list</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        border: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+    }
+
+    body {
+        height: 100vh;
+    }
+
+    .box {
+        flex-direction: column;
+        justify-content: flex-start !important;
+        width: 600px;
+        /* min-height:; */
+        padding: 0 15px 15px 15px;
+        background-color: blanchedalmond;
+        border-radius: 15px;
+    }
+    .smallbox input,button{
+        margin: 15px 0;
+        height: 35px;
+        border-radius: 15px;
+    }
+    .smallbox input{
+        width: 280px;
+        outline: none;
+        padding: 10px;
+        font-size: 1rem;
+    }
+    button{
+        width: 90px;
+        cursor: pointer;
+        margin: 0 0 0 8px;
+    }
+    .tasks{
+        width: 580px;
+        height: 45px;
+        margin: 0 0 10px 0 !important;
+        justify-content: space-between !important;
+        padding:2px 8px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 15px;
+    }
+    /* DRY */
+    
+    .flex-center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+</style>
+
+<body class="flex-center">
+    <div class="box flex-center">
+        <div class="smallbox">
+            <input class="task" type="text" placeholder="Enter task here">
+            <button class="btn1">Done</button>
+        </div>
+        <ul  class="task-box">
+            <!-- <li class="flex-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ullam eligendi cumque! Saepe,
+                corporis optio ullam animi beatae magni.<button class="btn2">edit</button><button class="btn3">delete</button></li> -->
+        </ul>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
