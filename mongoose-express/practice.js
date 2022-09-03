@@ -64,7 +64,7 @@ app.get("/showarticle/:name", (req, res) => {
         }
     })
 })
-// deleting the article from database wit  name
+// deleting the article from database with  name
 
 app.get("/showarticle/delete/:name", (req, res) => {
     makeArticle.deleteOne({name: req.body.name })
